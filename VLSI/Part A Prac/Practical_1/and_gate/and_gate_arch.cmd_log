@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/VLSI_DESIGN/Practical_1/and_gate/and_gate_arch.xst" -ofn "/home/ise/VLSI_DESIGN/Practical_1/and_gate/and_gate_arch.syr" 

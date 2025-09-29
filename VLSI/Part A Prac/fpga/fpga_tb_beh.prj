@@ -1,0 +1,2 @@
+vhdl work "fpga_arch.vhd"
+vhdl work "fpga_tb.vhd"

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/VLSI_DESIGN/mod25/mod25_tb_isim_beh.exe" -prj "/home/ise/VLSI_DESIGN/mod25/mod25_tb_beh.prj" "work.mod25_tb" 

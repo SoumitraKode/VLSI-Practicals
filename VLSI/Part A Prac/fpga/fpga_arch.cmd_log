@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/VLSI_DESIGN/fpga/fpga_arch.xst" -ofn "/home/ise/VLSI_DESIGN/fpga/fpga_arch.syr" 

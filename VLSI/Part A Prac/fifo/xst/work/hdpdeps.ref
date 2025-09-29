@@ -1,0 +1,6 @@
+V3 3
+FL /home/ise/VLSI_DESIGN/fifo/fifo_arch.vhd 2025/09/29.07:12:20 P.20131013
+EN work/fifo_arch 1759155230 FL /home/ise/VLSI_DESIGN/fifo/fifo_arch.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/fifo_arch/Behavioral 1759155231 \
+      FL /home/ise/VLSI_DESIGN/fifo/fifo_arch.vhd EN work/fifo_arch 1759155230

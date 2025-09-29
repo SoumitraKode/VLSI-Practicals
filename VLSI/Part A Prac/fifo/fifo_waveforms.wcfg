@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ise/VLSI_DESIGN/fifo/fifo_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="fifo_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/fifo_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/enr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enr</obj_property>
+      <obj_property name="ObjectShortName">enr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/enw" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enw</obj_property>
+      <obj_property name="ObjectShortName">enw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/full" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/data_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/i" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">i</obj_property>
+      <obj_property name="ObjectShortName">i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_tb/depth" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">depth</obj_property>
+      <obj_property name="ObjectShortName">depth</obj_property>
+   </wvobject>
+</wave_config>

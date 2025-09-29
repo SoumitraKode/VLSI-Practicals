@@ -1,0 +1,7 @@
+V3 3
+FL /home/ise/VLSI_DESIGN/fpga/fpga_arch.vhd 2025/09/29.13:56:23 P.20131013
+EN work/fpga_arch 1759147071 FL /home/ise/VLSI_DESIGN/fpga/fpga_arch.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/fpga_arch/Behavioral 1759147072 \
+      FL /home/ise/VLSI_DESIGN/fpga/fpga_arch.vhd EN work/fpga_arch 1759147071

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/VLSI_DESIGN/Practical_1/and_gate/and_gate_test_bench_isim_beh.exe" -prj "/home/ise/VLSI_DESIGN/Practical_1/and_gate/and_gate_test_bench_beh.prj" "work.and_gate_test_bench" 

@@ -1,0 +1,2 @@
+vhdl work "mod25_arch.vhd"
+vhdl work "mod25_tb.vhd"

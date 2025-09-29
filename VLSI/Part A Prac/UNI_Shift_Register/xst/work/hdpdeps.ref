@@ -1,0 +1,9 @@
+V3 3
+FL /home/ise/VLSI_DESIGN/UNI_Shift_Register/UNI_Shift_Register_arch.vhd 2025/09/29.05:13:46 P.20131013
+EN work/UNI_Shift_Register_arch 1759122838 \
+      FL /home/ise/VLSI_DESIGN/UNI_Shift_Register/UNI_Shift_Register_arch.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/UNI_Shift_Register_arch/Behavioral 1759122839 \
+      FL /home/ise/VLSI_DESIGN/UNI_Shift_Register/UNI_Shift_Register_arch.vhd \
+      EN work/UNI_Shift_Register_arch 1759122838

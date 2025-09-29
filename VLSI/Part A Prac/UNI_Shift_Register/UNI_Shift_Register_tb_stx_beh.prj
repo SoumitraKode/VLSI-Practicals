@@ -1,0 +1,2 @@
+vhdl isim_temp "UNI_Shift_Register_arch.vhd"
+vhdl isim_temp "UNI_Shift_Register_tb.vhd"

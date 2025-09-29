@@ -1,0 +1,475 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+Reading design: fifo_arch.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fifo_arch.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "fifo_arch"
+Output Format                      : NGC
+Target Device                      : xc3s250e-5-pq208
+
+---- Source Options
+Top Module Name                    : fifo_arch
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/VLSI_DESIGN/fifo/fifo_arch.vhd" in Library work.
+Architecture behavioral of Entity fifo_arch is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <fifo_arch> in library <work> (architecture <behavioral>) with generics.
+	depth = 16
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <fifo_arch> in library <work> (Architecture <behavioral>).
+	depth = 16
+INFO:Xst:1432 - Contents of array <memory> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <memory> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:1432 - Contents of array <memory> may be accessed with a negative index, causing simulation mismatch.
+INFO:Xst:1433 - Contents of array <memory> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <fifo_arch> analyzed. Unit <fifo_arch> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <fifo_arch>.
+    Related source file is "/home/ise/VLSI_DESIGN/fifo/fifo_arch.vhd".
+    Found 8-bit register for signal <data_out>.
+    Found 8-bit 16-to-1 multiplexer for signal <$varindex0000> created at line 67.
+    Found 1-bit register for signal <empty>.
+    Found 1-bit register for signal <full>.
+    Found 128-bit register for signal <memory>.
+    Found 32-bit register for signal <num_elem>.
+    Found 32-bit adder for signal <num_elem$addsub0000> created at line 74.
+    Found 32-bit 4-to-1 multiplexer for signal <num_elem$mux0001> created at line 71.
+    Found 32-bit subtractor for signal <num_elem$sub0000> created at line 69.
+    Found 32-bit up counter for signal <readptr>.
+    Found 32-bit up counter for signal <writeptr>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred 170 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  40 Multiplexer(s).
+Unit <fifo_arch> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 20
+ 1-bit register                                        : 2
+ 32-bit register                                       : 1
+ 8-bit register                                        : 17
+# Multiplexers                                         : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 8-bit 16-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 170
+ Flip-Flops                                            : 170
+# Multiplexers                                         : 2
+ 32-bit 4-to-1 multiplexer                             : 1
+ 8-bit 16-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <fifo_arch> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block fifo_arch, actual ratio is 11.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 234
+ Flip-Flops                                            : 234
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : fifo_arch.ngr
+Top Level Output File Name         : fifo_arch
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 708
+#      GND                         : 1
+#      INV                         : 33
+#      LUT1                        : 63
+#      LUT2                        : 68
+#      LUT2_D                      : 2
+#      LUT3                        : 68
+#      LUT4                        : 112
+#      LUT4_D                      : 2
+#      LUT4_L                      : 26
+#      MUXCY                       : 148
+#      MUXF5                       : 32
+#      MUXF6                       : 16
+#      MUXF7                       : 8
+#      VCC                         : 1
+#      XORCY                       : 128
+# FlipFlops/Latches                : 234
+#      FDC                         : 33
+#      FDCE                        : 200
+#      FDP                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 11
+#      OBUF                        : 10
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s250epq208-5 
+
+ Number of Slices:                      278  out of   2448    11%  
+ Number of Slice Flip Flops:            234  out of   4896     4%  
+ Number of 4 input LUTs:                374  out of   4896     7%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    158    13%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 234   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RST                                | IBUF                   | 234   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 10.452ns (Maximum Frequency: 95.678MHz)
+   Minimum input arrival time before clock: 9.628ns
+   Maximum output required time after clock: 4.765ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 10.452ns (frequency: 95.678MHz)
+  Total number of paths / destination ports: 29346 / 306
+-------------------------------------------------------------------------
+Delay:               10.452ns (Levels of Logic = 37)
+  Source:            num_elem_0 (FF)
+  Destination:       full (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: num_elem_0 to full
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.514   0.603  num_elem_0 (num_elem_0)
+     LUT1:I0->O            1   0.612   0.000  Msub_num_elem_sub0000_cy<0>_rt (Msub_num_elem_sub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.404   0.000  Msub_num_elem_sub0000_cy<0> (Msub_num_elem_sub0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_num_elem_sub0000_cy<1> (Msub_num_elem_sub0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_num_elem_sub0000_cy<2> (Msub_num_elem_sub0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_num_elem_sub0000_cy<3> (Msub_num_elem_sub0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_num_elem_sub0000_cy<4> (Msub_num_elem_sub0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_num_elem_sub0000_cy<5> (Msub_num_elem_sub0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_num_elem_sub0000_cy<6> (Msub_num_elem_sub0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_num_elem_sub0000_cy<7> (Msub_num_elem_sub0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_num_elem_sub0000_cy<8> (Msub_num_elem_sub0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_num_elem_sub0000_cy<9> (Msub_num_elem_sub0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_num_elem_sub0000_cy<10> (Msub_num_elem_sub0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_num_elem_sub0000_cy<11> (Msub_num_elem_sub0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_num_elem_sub0000_cy<12> (Msub_num_elem_sub0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_num_elem_sub0000_cy<13> (Msub_num_elem_sub0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_num_elem_sub0000_cy<14> (Msub_num_elem_sub0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_num_elem_sub0000_cy<15> (Msub_num_elem_sub0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_num_elem_sub0000_cy<16> (Msub_num_elem_sub0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_num_elem_sub0000_cy<17> (Msub_num_elem_sub0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_num_elem_sub0000_cy<18> (Msub_num_elem_sub0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_num_elem_sub0000_cy<19> (Msub_num_elem_sub0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Msub_num_elem_sub0000_cy<20> (Msub_num_elem_sub0000_cy<20>)
+     XORCY:CI->O           2   0.699   0.383  Msub_num_elem_sub0000_xor<21> (num_elem_sub0000<21>)
+     LUT4:I3->O            1   0.612   0.000  Mmux_num_elem_mux00012711 (Mmux_num_elem_mux0001271)
+     MUXCY:S->O            1   0.404   0.000  Madd_num_elem_addsub0000_cy<21> (Madd_num_elem_addsub0000_cy<21>)
+     XORCY:CI->O           1   0.699   0.360  Madd_num_elem_addsub0000_xor<22> (num_elem_addsub0000<22>)
+     LUT4:I3->O            2   0.612   0.532  Mmux_num_elem_mux0001301 (num_elem_mux0001<22>)
+     LUT3:I0->O            1   0.612   0.000  empty_cmp_eq00001_wg_lut<0> (empty_cmp_eq00001_wg_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  empty_cmp_eq00001_wg_cy<0> (empty_cmp_eq00001_wg_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  empty_cmp_eq00001_wg_cy<1> (empty_cmp_eq00001_wg_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  empty_cmp_eq00001_wg_cy<2> (empty_cmp_eq00001_wg_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  empty_cmp_eq00001_wg_cy<3> (empty_cmp_eq00001_wg_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  empty_cmp_eq00001_wg_cy<4> (empty_cmp_eq00001_wg_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  empty_cmp_eq00001_wg_cy<5> (empty_cmp_eq00001_wg_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  empty_cmp_eq00001_wg_cy<6> (empty_cmp_eq00001_wg_cy<6>)
+     MUXCY:CI->O           2   0.400   0.383  empty_cmp_eq00001_wg_cy<7> (empty_cmp_eq00001_wg_cy<7>)
+     LUT4:I3->O            1   0.612   0.000  empty_cmp_eq00001 (empty_cmp_eq0000)
+     FDP:D                     0.268          empty
+    ----------------------------------------
+    Total                     10.452ns (8.190ns logic, 2.261ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 2140 / 362
+-------------------------------------------------------------------------
+Offset:              9.628ns (Levels of Logic = 36)
+  Source:            rd_en (PAD)
+  Destination:       full (FF)
+  Destination Clock: CLK rising
+
+  Data Path: rd_en to full
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            66   1.106   1.234  rd_en_IBUF (rd_en_IBUF)
+     LUT4:I0->O            1   0.612   0.000  Madd_num_elem_addsub0000_lut<0> (Madd_num_elem_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Madd_num_elem_addsub0000_cy<0> (Madd_num_elem_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<1> (Madd_num_elem_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<2> (Madd_num_elem_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<3> (Madd_num_elem_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<4> (Madd_num_elem_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<5> (Madd_num_elem_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<6> (Madd_num_elem_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<7> (Madd_num_elem_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<8> (Madd_num_elem_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<9> (Madd_num_elem_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<10> (Madd_num_elem_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<11> (Madd_num_elem_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<12> (Madd_num_elem_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<13> (Madd_num_elem_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<14> (Madd_num_elem_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<15> (Madd_num_elem_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<16> (Madd_num_elem_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<17> (Madd_num_elem_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<18> (Madd_num_elem_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<19> (Madd_num_elem_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<20> (Madd_num_elem_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.051   0.000  Madd_num_elem_addsub0000_cy<21> (Madd_num_elem_addsub0000_cy<21>)
+     XORCY:CI->O           1   0.699   0.360  Madd_num_elem_addsub0000_xor<22> (num_elem_addsub0000<22>)
+     LUT4:I3->O            2   0.612   0.532  Mmux_num_elem_mux0001301 (num_elem_mux0001<22>)
+     LUT3:I0->O            1   0.612   0.000  empty_cmp_eq00001_wg_lut<0> (empty_cmp_eq00001_wg_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  empty_cmp_eq00001_wg_cy<0> (empty_cmp_eq00001_wg_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  empty_cmp_eq00001_wg_cy<1> (empty_cmp_eq00001_wg_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  empty_cmp_eq00001_wg_cy<2> (empty_cmp_eq00001_wg_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  empty_cmp_eq00001_wg_cy<3> (empty_cmp_eq00001_wg_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  empty_cmp_eq00001_wg_cy<4> (empty_cmp_eq00001_wg_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  empty_cmp_eq00001_wg_cy<5> (empty_cmp_eq00001_wg_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  empty_cmp_eq00001_wg_cy<6> (empty_cmp_eq00001_wg_cy<6>)
+     MUXCY:CI->O           2   0.400   0.383  empty_cmp_eq00001_wg_cy<7> (empty_cmp_eq00001_wg_cy<7>)
+     LUT4:I3->O            1   0.612   0.000  empty_cmp_eq00001 (empty_cmp_eq0000)
+     FDP:D                     0.268          empty
+    ----------------------------------------
+    Total                      9.628ns (7.119ns logic, 2.509ns route)
+                                       (73.9% logic, 26.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              4.765ns (Levels of Logic = 1)
+  Source:            empty (FF)
+  Destination:       fifo_empty (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: empty to fifo_empty
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q             67   0.514   1.082  empty (empty)
+     OBUF:I->O                 3.169          fifo_empty_OBUF (fifo_empty)
+    ----------------------------------------
+    Total                      4.765ns (3.683ns logic, 1.082ns route)
+                                       (77.3% logic, 22.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 18.62 secs
+ 
+--> 
+
+
+Total memory usage is 617404 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

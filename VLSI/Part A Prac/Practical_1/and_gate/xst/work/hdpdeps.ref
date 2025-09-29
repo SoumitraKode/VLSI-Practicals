@@ -1,0 +1,8 @@
+V3 3
+FL /home/ise/VLSI_DESIGN/Practical_1/and_gate/and_gate.vhd 2025/09/28.11:48:23 P.20131013
+EN work/and_gate_arch 1759060115 \
+      FL /home/ise/VLSI_DESIGN/Practical_1/and_gate/and_gate.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/and_gate_arch/Behavioral 1759060116 \
+      FL /home/ise/VLSI_DESIGN/Practical_1/and_gate/and_gate.vhd \
+      EN work/and_gate_arch 1759060115

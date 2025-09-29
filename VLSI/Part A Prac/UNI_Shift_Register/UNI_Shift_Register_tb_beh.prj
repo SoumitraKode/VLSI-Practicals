@@ -1,0 +1,2 @@
+vhdl work "UNI_Shift_Register_arch.vhd"
+vhdl work "UNI_Shift_Register_tb.vhd"

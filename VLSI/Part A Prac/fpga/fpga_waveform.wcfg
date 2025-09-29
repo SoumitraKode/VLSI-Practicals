@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ise/VLSI_DESIGN/fpga/fpga_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="fpga_tb" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/fpga_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_tb/clk_12mhz" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_12mhz</obj_property>
+      <obj_property name="ObjectShortName">clk_12mhz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_tb/lcd_rs" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lcd_rs</obj_property>
+      <obj_property name="ObjectShortName">lcd_rs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_tb/lcd_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lcd_en</obj_property>
+      <obj_property name="ObjectShortName">lcd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_tb/lcd_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">lcd_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">lcd_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fpga_tb/clk_12mhz_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_12mhz_period</obj_property>
+      <obj_property name="ObjectShortName">clk_12mhz_period</obj_property>
+   </wvobject>
+</wave_config>

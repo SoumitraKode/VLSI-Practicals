@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/VLSI_DESIGN/four_bit_alu/four_bit_alu_tb_isim_beh.exe" -prj "/home/ise/VLSI_DESIGN/four_bit_alu/four_bit_alu_tb_beh.prj" "work.four_bit_alu_tb" 

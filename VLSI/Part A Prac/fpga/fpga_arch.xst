@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/VLSI_DESIGN/fpga/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/VLSI_DESIGN/fpga/xst"
+elaborate
+-ifn fpga_arch.prj
+-ifmt mixed

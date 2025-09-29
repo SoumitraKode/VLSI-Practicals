@@ -1,0 +1,2 @@
+vhdl isim_temp "fpga_arch.vhd"
+vhdl isim_temp "fpga_tb.vhd"

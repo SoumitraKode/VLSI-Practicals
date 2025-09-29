@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/VLSI_DESIGN/fifo/fifo_tb_isim_beh.exe" -prj "/home/ise/VLSI_DESIGN/fifo/fifo_tb_beh.prj" "work.fifo_tb" 
